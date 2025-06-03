@@ -2,9 +2,11 @@
 
 ## 1. High-Level Overview
 
-This project showcases the development of an AI-powered Kubernetes troubleshooting assistant using the Model-Controller-Presenter (MCP) protocol. Implemented in Go for high performance and reliability, the prototype integrates large language models (LLMs) with standard Kubernetes tools like `kubectl` and `k8sgpt` to deliver a natural language, conversational interface for managing and troubleshooting clusters. Key features include real-time cluster monitoring, automated issue detection and resolution, intelligent command execution, and verification of applied fixes.
+This project showcases the development of an AI-powered Kubernetes troubleshooting assistant using the Model-Controller-Presenter (MCP) protocol. Implemented in Go using [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) SDK, the prototype integrates large language models (LLMs) with standard Kubernetes tools like `kubectl` and `k8sgpt` to deliver a natural language, conversational interface for managing and troubleshooting clusters. Key features include real-time cluster monitoring, automated issue detection and resolution, intelligent command execution, and verification of applied fixes.
 
-## 2. MCP Protocol Overview
+## 2. System Architecture
+
+### MCP Protocol Overview
 
 The Model-Controller-Presenter (MCP) protocol is a standardized framework designed to facilitate robust and flexible communication between clients and servers. It enables the discovery and exposure of tools as callable functions, supports both synchronous and asynchronous operations, ensures type-safe communication, allows for bidirectional data exchange, and permits language-agnostic tool implementation, making it adaptable across diverse systems and environments.
 
@@ -61,7 +63,6 @@ Example Flow:
 6. MCP Server executes kubectl commands
 7. Results flow back to user
 ```
-
 
 ## 3. Code Overview and Example Use
 
@@ -123,7 +124,7 @@ The system automatically:
 4. Verifies the fix
 
 
-## 4. Getting Started: Using the MCP Kubernetes Troubleshooter
+## 4. Using the MCP Kubernetes Troubleshooter
 
 ### Prerequisites
 
