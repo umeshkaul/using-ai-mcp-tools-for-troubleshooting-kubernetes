@@ -18,8 +18,11 @@ In this project, MCP is used to:
  
 ### System Architecture
 
-```
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+<img src="mcp-ai-troubleshooting.png" alt="data flow between different components" width="600"/>
+
+
+
+<!-- ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │  User Input     │◄───►│  MCP Client     │◄───►│  OpenAI LLM     │
 └─────────────────┘     └────────┬────────┘     └─────────────────┘
                                  │
@@ -42,9 +45,13 @@ In this project, MCP is used to:
                         ┌─────────────────┐
                         │  Kubernetes     │
                         │  Cluster        │
-                        └─────────────────┘
+                        └─────────────────┘ 
+-->
 
-Flow:
+
+##### Data Flow: 
+
+```
 1. User Input → MCP Client (natural language query)
 2. MCP Client → OpenAI LLM (query interpretation)
 3. OpenAI LLM → MCP Client (tool selection and arguments)
@@ -53,8 +60,11 @@ Flow:
 6. MCP Tools → Kubernetes Cluster (command execution)
 7. Results flow back up through the same path
 8. MCP Client → User (formatted response)
+```
 
-Example Flow:
+##### Example Flow:
+
+```
 1. User: "check to see if there are problems with any pods"
 2. LLM interprets and selects k8sgpt analyze
 3. MCP Server executes k8sgpt analyze
