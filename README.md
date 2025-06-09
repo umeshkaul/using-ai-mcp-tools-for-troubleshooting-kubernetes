@@ -1,5 +1,7 @@
 # Building an AI-Powered Kubernetes Troubleshooting Assistant with MCP
 
+Agentic AI + MCP is changing how we troubleshoot Kubernetes. Built a quick Go prototype that uses the MCP protocol to run tools like `kubect` and `k8sgpt` on live clusters.
+
 ## 1. High-Level Overview
 
 This project showcases the development of an AI-powered Kubernetes troubleshooting assistant using the Model-Controller-Presenter (MCP) protocol. Implemented in Go using [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) SDK, the prototype integrates large language models (LLMs) with standard Kubernetes tools like `kubectl` and `k8sgpt` to deliver a natural language, conversational interface for managing and troubleshooting clusters. Key features include real-time cluster monitoring, automated issue detection and resolution, intelligent command execution, and verification of applied fixes.
