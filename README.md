@@ -1,6 +1,6 @@
 # Building an AI-Powered Kubernetes Troubleshooting Assistant with MCP
 
-Agentic AI + MCP is changing how we troubleshoot Kubernetes. Built a quick Go prototype that uses the MCP protocol to run tools like `kubect` and `k8sgpt` on live clusters.
+Agentic AI + MCP is changing how we troubleshoot Kubernetes. Built a quick Go prototype that uses the MCP protocol to run tools like `kubectl` and `k8sgpt` on live clusters.
 
 ## 1. High-Level Overview
 
